@@ -1,15 +1,24 @@
 ---
-applyTo: "assignments/**/README.md"
+agent: agent
+description: Create a new programming homework assignment
+argument-hint: Provide assignment details
 ---
 
-# New Assignment Prompt
+# Create New Programming Assignment
 
-Use this prompt when creating a new assignment markdown file:
+Your goal is to generate a new homework assignment for the Mergington High School students.
 
-- Follow the structure in templates/assignment-template.md
-- Clearly state the assignment title, objective, and tasks
-- For each task, provide a descriptive name, clear instructions, and measurable requirements
-- Ensure content is learning-focused and student-friendly
-- Do not add extra sections unless specified
+## Step 1: Gather Assignment Information
 
-*Edit this prompt as needed for new assignment creation workflows.*
+If not already provided by the user, ask what the assignment will be about.
+
+## Step 2: Create Assignment Structure
+
+1. Create a new directory in the `assignments` folder with a unique name based on the assignment topic
+1. Create a new file in the directory named `README.md` with the structure from the [assignment-template.md](../../templates/assignment-template.md) file
+1. Fill out the assignment details in the README file
+1. (Optional) Add starter code or attachments if the assignment needs them - add these files to the same assignment folder
+
+## Step 3: Update Website Configuration
+
+Update the assignments list in [config.json](../../config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.

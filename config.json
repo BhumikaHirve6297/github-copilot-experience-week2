@@ -17,15 +17,7 @@
           "file": "starter-code.py",
           "type": "python"
         }
-          },
-          {
-            "id": "fastapi-rest-apis",
-            "title": "Building REST APIs with FastAPI",
-            "description": "Learn to build RESTful APIs using FastAPI, including basic setup and CRUD operations.",
-            "path": "assignments/fastapi-rest-apis",
-            "dueDate": "2026-03-17"
-          }
-        ]
+      ]
     },
     {
       "id": "games-in-python",
@@ -66,6 +58,21 @@
           "type": "csv"
         }
       ]
+    },
+    {
+      "id": "fastapi-rest-api",
+      "title": "Building REST APIs with FastAPI",
+      "description": "Create a simple RESTful web service using FastAPI, including data models and endpoint testing.",
+      "path": "assignments/fastapi-rest-api",
+      "dueDate": "2026-03-17",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
+ 
